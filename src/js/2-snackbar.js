@@ -23,6 +23,8 @@ form.addEventListener('submit', (event) => {
         return promise
     }
 
+    const promise = createPromise(delay, delay, state === "fulfilled");
+
     promise
         .then((delay) => {
             iziToast.success({
