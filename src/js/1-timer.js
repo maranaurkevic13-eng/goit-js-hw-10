@@ -42,7 +42,7 @@ startBtn.addEventListener('click', () => {
 
         const { days, hours, minutes, seconds } = convertMs(res);
 
-        daysElem.textContent = days;
+        daysElem.textContent = addLeadingZero(days);
         hoursElem.textContent = addLeadingZero(hours);
         minutesElem.textContent = addLeadingZero(minutes);
         secondsElem.textContent = addLeadingZero(seconds);
